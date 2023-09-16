@@ -1,0 +1,209 @@
+@import "reset";
+@import "vars";
+@import "startstyle";
+@import "header";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap');
+@import "footer";
+
+.trener{
+  background: rgba(0, 0, 0, 0.9);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 70;
+  padding: 30px 5px 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  &__closeButtonIcon{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 100;
+    i{
+      font-size: 40px;
+      transition: 0.5s;
+      &:hover{
+        color: $accent1;
+      }
+    }
+  }
+  &__window{
+    padding: 30px;
+    position: relative;
+    max-width: 890px;
+    margin: 0 auto;
+    display: flex;
+    overflow-y: auto;
+    gap: 20px;
+    background: #393939;
+    border-radius: 10px;
+    animation: 0.7s onslide forwards;
+    max-height: 100%;
+    transform: translateY(-500%) scale(0.8);
+    @keyframes onslide {
+      from {
+        transform: translateY(-500%) scale(0.8);
+      }
+      80%{
+        transform: translateY(0%) scale(0.8);
+      }
+      to{
+        transform: translateY(0%) scale(1) ;
+      }
+    }
+  }
+  &__image{
+    flex: 1 1 50%;
+    width: 100%;
+    border-radius: 50%;
+    background: url("../img/trener3.jpg") center/cover no-repeat;
+    height: 400px;
+  }
+  &__info{
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  &__name{
+    font-size: 40px;
+    font-weight: 700;
+  }
+  &__special{
+    font-size: 22px;
+    font-weight: 500;
+  }
+  &__text{
+    color: $colorMain;
+    font-size: 18px;
+    flex: 1 1 auto;
+  }
+  &__button{
+    max-width: 300px;
+    background: $accent1;
+    color: $colorMain;
+    padding: 20px 30px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+    &:hover{
+      color: $accent1;
+      background: $colorMain;
+    }
+  }
+}
+
+.openModal{
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .trener{
+    &__window{
+      overflow-y: auto;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
+    &__image {
+      width: 300px;
+      flex: 0 1 300px;
+      height: 300px;
+      justify-self: center;
+    }
+    &__text{
+      flex: 1 1 100%;
+    }
+  }
+}
+@media (max-width: 475px) {
+  .trener{
+    &__closeButtonIcon{
+      top: 5px;
+      right: 5px;
+
+      i{
+        font-size: 20px;
+      }
+    }
+    &__window{
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
+    &__image {
+      flex: 0 1 200px;
+      height: 200px;
+      justify-self: center;
+    }
+    &__text{
+      flex: 1 1 100%;
+    }
+    &__info{
+      align-items: center;
+    }
+    &__name{
+      font-size: 24px;
+    }
+    &__special{
+      font-size: 20px;
+      text-align: center;
+    }
+    &__text{
+      font-size: 16px;
+      text-align: center;
+    }
+  }
+}
+@media (max-width: 390px) {
+  .trener{
+    &__window{
+      padding: 15px;
+    }
+  }
+}
+@media (max-width: 360px) {
+  .trener{
+    padding: 30px 5px 5px;
+    &__window{
+      padding: 10px 5px;
+    }
+    &__special{
+      font-size: 16px;
+    }
+    &__text{
+      font-size: 14px;
+    }
+    &__button{
+      font-size: 16px;
+    }
+  }
+}
+
+.trener__window::-webkit-scrollbar{
+  width: 8px;
+  position: relative;
+  right: 10px;
+
+}
+
+.trener__window::-webkit-scrollbar-track{
+  background: #393939;
+}
+
+.trener__window::-webkit-scrollbar-thumb {
+  background-color: $accent1;    /* цвет бегунка */
+  border-radius: 20px;       /* округлось бегунка */
+  border: 3px solid $accent1;  /* отступ вокруг бегунка */
+}
+
+@import "media";

@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>FitZone</title>
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+  <link rel="stylesheet" href="./css/group.css">
+  <link rel="stylesheet" href="./css/modal.css">
+</head>
+<body>
+  <div class="modal">
+    <div class="modal__closeButtonIcon">
+      <i class="uil uil-multiply"></i>
+    </div>
+    <div class="modal__window">
+      <div class="modal__window-title modal-title">Оставить заявку</div>
+      <form action="#" class="modal__window-form">
+        <label>
+          <input type="text" placeholder="Фамилия Имя Отчество" class="modal__form-name">
+        </label>
+        <label>
+          <input type="tel" placeholder="Телефон" class="modal__form-number">
+        </label>
+        <label>
+          <input type="email" placeholder="Почта" class="modal__form-mail">
+        </label>
+        <div class="modal__window-button">Свяжитесь со мной</div>
+      </form>
+    </div>
+  </div>
+  <div class="modal__complete">
+    <div class="modal__closeButtonIcon">
+      <i class="uil uil-multiply"></i>
+    </div>
+    <div class="modal__window">
+      <div class="modal__complete-title modal-title">Ваша заявка успешно принята</div>
+      <div class="modal__complete-text">Наш менеджер с Вами скоро свяжется</div>
+      <div class="modal__complete-button modal__closeButton">Вернуться на главную</div>
+    </div>
+  </div>
+  <div class="modal__enter">
+    <div class="modal__closeButtonIcon">
+      <i class="uil uil-multiply"></i>
+    </div>
+    <div class="modal__window">
+      <div class="modal__enter-title modal-title">Войти</div>
+      <form action="#" method="get" class="modal__enter-form">
+        <label>
+          <input type="text" name="login" placeholder="Логин">
+        </label>
+        <label>
+          <input type="password" name="password" placeholder="Пароль">
+        </label>
+        <div class="modal__enter-button">ВОЙТИ</div>
+      </form>
+    </div>
+  </div>
+  <div class="modal__signUp modal__enter">
+    <div class="modal__closeButtonIcon">
+      <i class="uil uil-multiply"></i>
+    </div>
+    <div class="modal__window">
+      <div class="modal__signUp-title modal__enter-title modal-title">Регистрация</div>
+      <form action="#" method="get" class="modal__signUp-form modal__enter-form">
+        <label>
+          <input type="text" name="name" placeholder="Фамилия Имя Отчество">
+        </label>
+        <label>
+          <input type="email" name="email" placeholder="Почта">
+        </label>
+        <label>
+          <input type="text" name="login" placeholder="Логин">
+        </label>
+        <label>
+          <input type="password" name="password" placeholder="Пароль">
+        </label>
+        <div class="modal__signUp-button modal__enter-button">ЗАРЕГИСТРИРОВАТЬСЯ</div>
+      </form>
+    </div>
+  </div>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__container __container">
+        <div class="header__inner">
+          <div class="header__logo">
+            <span class="header__logo-text">Fit</span><span class="header__logo-text">Zone</span>
+          </div>
+          <div class="header__info">
+            <div class="header__location">
+              <div class="header__location-icon">
+                <i class="uil uil-map-marker"></i>
+              </div>
+              <div class="header__location-text">Баумана 38</div>
+            </div>
+            <div class="header__number">
+              <div class="header__number-icon">
+                <i class="uil uil-phone"></i>
+              </div>
+              <div class="header__number-text">+7 (990) 333 44 66</div>
+            </div>
+            <div class="header__social">
+              <a href="https://t.me/itrostik" class="header__social-tg">
+                <i class="uil uil-telegram"></i>
+              </a>
+              <a href="https://t.me/itrostik" class="header__social-whatsapp">
+                <i class="uil uil-whatsapp"></i>
+              </a>
+            </div>
+            <div class="header__buttons">
+              <div class="header__buttons-signIn">
+                <span class="header__buttons-sighIn-text">Войти</span>
+                <span class="header__buttons-sighIn-icon">
+                <i class="uil uil-user"></i>
+              </span>
+              </div>
+              <div class="header__buttons-signUp">
+                Зарегистрироваться
+              </div>
+            </div>
+            <div class="header__infoMenu">
+              <i class="uil uil-list-ui-alt"></i>
+            </div>
+          </div>
+          <div class="header__menu">
+            <ul class="header__menu-list">
+              <li class="header__menu-item">
+                <a href="./index.html" class="header__menu-link">О клубе</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="./fitness.html" class="header__menu-link">Фитнес-зоны</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="./tariff.html" class="header__menu-link">Тарифы</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="./kids.html" class="header__menu-link">Детский фитнес</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="./group.html" class="header__menu-link">Групповые программы</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="./team.html" class="header__menu-link">Тренеры</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="header__mobileMenu">
+        <div class="header__mobileMenu-closeButton">
+          <i class="uil uil-times"></i>
+        </div>
+        <div class="header__mobileMenu-list">
+          <ul class="header__mobileMenu-menu">
+            <li class="header__menu-item">
+              <a href="./index.html" class="header__menu-link">О клубе</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="./fitness.html" class="header__menu-link">Фитнес-зоны</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="./tariff.html" class="head__menu-link">Тарифы</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="./kids.html" class="header__menu-link">Детский фитнес</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="./group.html" class="header__menu-link">Групповые программы</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="./team.html" class="header__menu-link">Тренеры</a>
+            </li>
+          </ul>
+        </div>
+        <div class="header__mobileMenu-info">
+          <div class="header__mobileMenu-infoBlock">
+            <div class="header__mobileMenu-location">
+              <div class="header__location-icon">
+                <i class="uil uil-map-marker"></i>
+              </div>
+              <div class="header__location-text">Баумана 38</div>
+            </div>
+            <div class="header__mobileMenu-number">
+              <div class="header__number-icon">
+                <i class="uil uil-phone"></i>
+              </div>
+              <div class="header__number-text">+7 (990) 333 44 66</div>
+            </div>
+          </div>
+          <div class="header__mobileMenu-social">
+            <a href="https://t.me/itrostik" class="header__social-tg">
+              <i class="uil uil-telegram"></i>
+            </a>
+            <a href="https://t.me/itrostik" class="header__social-whatsapp">
+              <i class="uil uil-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+        <div class="header__mobileMenu-buttons">
+          <div class="header__buttons-signIn header__mobileMenu-buttons-signIn">
+            <span class="header__buttons-sighIn-text">Войти</span>
+            <span class="header__buttons-sighIn-icon">
+                <i class="uil uil-user"></i>
+              </span>
+          </div>
+          <div class="header__buttons-signUp header__mobileMenu-buttons-signUp">
+            Зарегистрироваться
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="main__container __container">
+        <div class="main__group">
+          <div class="main__group-title title">Групповые программы</div>
+          <div class="main__group-info">
+            <div class="main__group-training group-training">
+              <div class="group-training__image">
+              </div>
+              <div class="group-training__title">Силовая тренировка</div>
+              <div class="group-training__text">Программа включает в себя упражнения на развитие силы и выносливости,
+                такие как подтягивания, отжимания, приседания и т.д. Подходит для людей, которые хотят улучшить свою
+                физическую форму и развить мышечную массу.
+              </div>
+              <div class="group-training__button openButton">Записаться на пробную тренировку</div>
+            </div>
+            <div class="main__group-training group-training">
+              <div class="group-training__image">
+              </div>
+              <div class="group-training__title">Аэробика и танцы</div>
+              <div class="group-training__text">Программа включает в себя упражнения на развитие координации и
+                выносливости, такие как аэробика, зумба, танцы и т.д. Подходит для людей, которые любят движение и хотят
+                улучшить свою физическую форму.
+              </div>
+              <div class="group-training__button openButton">Записаться на пробную тренировку</div>
+            </div>
+            <div class="main__group-training group-training">
+              <div class="group-training__image">
+              </div>
+              <div class="group-training__title">Йога и растяжка</div>
+              <div class="group-training__text">Программа включает в себя упражнения на развитие гибкости и здоровья,
+                такие как йога, пилатес, растяжка и т.д. Подходит для людей, которые хотят улучшить свою физическую форму
+                и сохранить здоровье.
+              </div>
+              <div class="group-training__button openButton">Записаться на пробную тренировку</div>
+            </div>
+            <div class="main__group-training group-training">
+              <div class="group-training__image">
+              </div>
+              <div class="group-training__title">Cпортивные игры</div>
+              <div class="group-training__text">Программа включает в себя игры в командных спортах, такие как футбол,
+                баскетбол, волейбол и т.д. Подходит для детей, которые любят соревноваться и развивать командный дух.
+              </div>
+              <div class="group-training__button openButton">Записаться на пробную тренировку</div>
+            </div>
+            <div class="main__group-training group-training">
+              <div class="group-training__image">
+              </div>
+              <div class="group-training__title">Тренировка на брусьях и турниках</div>
+              <div class="group-training__text">Программа включает в себя упражнения на развитие ловкости и силы, такие
+                как подтягивания на брусьях, обратные отжимания на турнике и т.д. Подходит для людей, которые хотят
+                развивать свои способности в акробатике.
+              </div>
+              <div class="group-training__button openButton">Записаться на пробную тренировку</div>
+            </div>
+            <div class="main__group-training group-training">
+              <div class="group-training__image">
+              </div>
+              <div class="group-training__title">Функциональная тренировка</div>
+              <div class="group-training__text">Программа включает в себя упражнения на развитие функциональной
+                подготовки, такие как подъемы на коробку, бег с перепрыгиванием препятствий и т.д. Подходит для людей,
+                которые хотят улучшить свою физическую форму и развивать свои способности.
+              </div>
+              <div class="group-training__button openButton">Записаться на пробную тренировку</div>
+            </div>
+            <div class="main__group-training group-training">
+              <div class="group-training__image">
+              </div>
+              <div class="group-training__title">Тренировка на скорость и реакцию</div>
+              <div class="group-training__text">Программа включает в себя упражнения на развитие скорости и реакции, такие
+                как бег на время, быстрые удары по мячу и т.д. Подходит для детей, которые хотят улучшить свою скорость и
+                реакцию.
+              </div>
+              <div class="group-training__button openButton">Записаться на пробную тренировку</div>
+            </div>
+            <div class="main__group-training group-training">
+              <div class="group-training__image">
+              </div>
+              <div class="group-training__title">Тренировка на выносливость</div>
+              <div class="group-training__text">Программа включает в себя упражнения на развитие выносливости, такие как
+                длительный бег, прыжки через скакалку и т.д. Подходит для детей, которые хотят улучшить свою физическую
+                форму и выносливость.
+              </div>
+              <div class="group-training__button openButton">Записаться на пробную тренировку</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__container __container">
+        <div class="footer__logo">
+          <span class="footer__logo-text">F</span><span class="footer__logo-text">Z</span>
+        </div>
+        <div class="footer__rules">
+          <div class="footer__rules-title footer__title">Правила клуба</div>
+          <div class="footer__rules-text">С правилами клуба Вы можете
+            ознакомиться <a href="#">здесь</a></div>
+        </div>
+        <div class="footer__contacts">
+          <div class="footer__contacts-title footer__title">Контакты</div>
+          <div class="footer__contacts-address"><span class="footer__contacts-address-title">Адрес: </span>
+            г. Казань, ул. Баумана, д. 38
+          </div>
+          <div class="footer__contacts-info">
+            <div class="footer__contacts-number">
+              <div class="footer__contacts-number-icon">
+                <i class="uil uil-phone"></i>
+              </div>
+              <div class="footer__contacts-number-text">
+                +7 (990) 333 44 66
+              </div>
+            </div>
+            <div class="footer__contacts-email">
+              <div class="footer__contacts-email-icon">
+                <i class="uil uil-at"></i>
+              </div>
+              <div class="footer__contacts-email-text">
+                fitzone@mail.ru
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__social">
+          <div class="footer__social-title footer__title">Соц. сети</div>
+          <div class="footer__social-info">
+            <a href="https://t.me/itrostik" class="footer__social-whatsapp">
+              <div class="footer__social-whatsapp-icon">
+                <i class="uil uil-whatsapp"></i>
+              </div>
+              <div class="footer__social-whatsapp-text">
+                WhatsApp
+              </div>
+            </a>
+            <a href="https://t.me/itrostik" class="footer__social-tg">
+              <div class="footer__social-tg-icon">
+                <i class="uil uil-telegram"></i>
+              </div>
+              <div class="footer__social-tg-text">
+                Telegram
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+  </div>
+  <script src="./js/index.bundle.js"></script>
+  <script src="./js/modal.bundle.js"></script>
+</body>
+</html>

@@ -1,0 +1,643 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>FitZone</title>
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+  <link rel="stylesheet" href="./css/tariff.css">
+  <link rel="stylesheet" href="./css/modal.css">
+</head>
+<body>
+  <div class="modal">
+    <div class="modal__closeButtonIcon">
+      <i class="uil uil-multiply"></i>
+    </div>
+    <div class="modal__window">
+      <div class="modal__window-title modal-title">Оставить заявку</div>
+      <form action="#" class="modal__window-form">
+        <label>
+          <input type="text" placeholder="Фамилия Имя Отчество" class="modal__form-name">
+        </label>
+        <label>
+          <input type="tel" placeholder="Телефон" class="modal__form-number">
+        </label>
+        <label>
+          <input type="email" placeholder="Почта" class="modal__form-mail">
+        </label>
+        <div class="modal__window-button">Свяжитесь со мной</div>
+      </form>
+    </div>
+  </div>
+  <div class="modal__complete">
+    <div class="modal__closeButtonIcon">
+      <i class="uil uil-multiply"></i>
+    </div>
+    <div class="modal__window">
+      <div class="modal__complete-title modal-title">Ваша заявка успешно принята</div>
+      <div class="modal__complete-text">Наш менеджер с Вами скоро свяжется</div>
+      <div class="modal__complete-button modal__closeButton">Вернуться на главную</div>
+    </div>
+  </div>
+  <div class="modal__enter">
+    <div class="modal__closeButtonIcon">
+      <i class="uil uil-multiply"></i>
+    </div>
+    <div class="modal__window">
+      <div class="modal__enter-title modal-title">Войти</div>
+      <form action="#" method="get" class="modal__enter-form">
+        <label>
+          <input type="text" name="login" placeholder="Логин">
+        </label>
+        <label>
+          <input type="password" name="password" placeholder="Пароль">
+        </label>
+        <div class="modal__enter-button">ВОЙТИ</div>
+      </form>
+    </div>
+  </div>
+  <div class="modal__signUp modal__enter">
+    <div class="modal__closeButtonIcon">
+      <i class="uil uil-multiply"></i>
+    </div>
+    <div class="modal__window">
+      <div class="modal__signUp-title modal__enter-title modal-title">Регистрация</div>
+      <form action="#" method="get" class="modal__signUp-form modal__enter-form">
+        <label>
+          <input type="text" name="name" placeholder="Фамилия Имя Отчество">
+        </label>
+        <label>
+          <input type="email" name="email" placeholder="Почта">
+        </label>
+        <label>
+          <input type="text" name="login" placeholder="Логин">
+        </label>
+        <label>
+          <input type="password" name="password" placeholder="Пароль">
+        </label>
+        <div class="modal__signUp-button modal__enter-button">ЗАРЕГИСТРИРОВАТЬСЯ</div>
+      </form>
+    </div>
+  </div>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__container __container">
+        <div class="header__inner">
+          <div class="header__logo">
+            <span class="header__logo-text">Fit</span><span class="header__logo-text">Zone</span>
+          </div>
+          <div class="header__info">
+            <div class="header__location">
+              <div class="header__location-icon">
+                <i class="uil uil-map-marker"></i>
+              </div>
+              <div class="header__location-text">Баумана 38</div>
+            </div>
+            <div class="header__number">
+              <div class="header__number-icon">
+                <i class="uil uil-phone"></i>
+              </div>
+              <div class="header__number-text">+7 (990) 333 44 66</div>
+            </div>
+            <div class="header__social">
+              <a href="https://t.me/itrostik" class="header__social-tg">
+                <i class="uil uil-telegram"></i>
+              </a>
+              <a href="https://t.me/itrostik" class="header__social-whatsapp">
+                <i class="uil uil-whatsapp"></i>
+              </a>
+            </div>
+            <div class="header__buttons">
+              <div class="header__buttons-signIn">
+                <span class="header__buttons-sighIn-text">Войти</span>
+                <span class="header__buttons-sighIn-icon">
+                <i class="uil uil-user"></i>
+              </span>
+              </div>
+              <div class="header__buttons-signUp">
+                Зарегистрироваться
+              </div>
+            </div>
+            <div class="header__infoMenu">
+              <i class="uil uil-list-ui-alt"></i>
+            </div>
+          </div>
+          <div class="header__menu">
+            <ul class="header__menu-list">
+              <li class="header__menu-item">
+                <a href="./index.html" class="header__menu-link">О клубе</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="./fitness.html" class="header__menu-link">Фитнес-зоны</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="./tariff.html" class="header__menu-link">Тарифы</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="./kids.html" class="header__menu-link">Детский фитнес</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="./group.html" class="header__menu-link">Групповые программы</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="./team.html" class="header__menu-link">Тренеры</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="header__mobileMenu">
+        <div class="header__mobileMenu-closeButton">
+          <i class="uil uil-times"></i>
+        </div>
+        <div class="header__mobileMenu-list">
+          <ul class="header__mobileMenu-menu">
+            <li class="header__menu-item">
+              <a href="./index.html" class="header__menu-link">О клубе</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="./fitness.html" class="header__menu-link">Фитнес-зоны</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="./tariff.html" class="head__menu-link">Тарифы</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="./kids.html" class="header__menu-link">Детский фитнес</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="./group.html" class="header__menu-link">Групповые программы</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="./team.html" class="header__menu-link">Тренеры</a>
+            </li>
+          </ul>
+        </div>
+        <div class="header__mobileMenu-info">
+          <div class="header__mobileMenu-infoBlock">
+            <div class="header__mobileMenu-location">
+              <div class="header__location-icon">
+                <i class="uil uil-map-marker"></i>
+              </div>
+              <div class="header__location-text">Баумана 38</div>
+            </div>
+            <div class="header__mobileMenu-number">
+              <div class="header__number-icon">
+                <i class="uil uil-phone"></i>
+              </div>
+              <div class="header__number-text">+7 (990) 333 44 66</div>
+            </div>
+          </div>
+          <div class="header__mobileMenu-social">
+            <a href="https://t.me/itrostik" class="header__social-tg">
+              <i class="uil uil-telegram"></i>
+            </a>
+            <a href="https://t.me/itrostik" class="header__social-whatsapp">
+              <i class="uil uil-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+        <div class="header__mobileMenu-buttons">
+          <div class="header__buttons-signIn header__mobileMenu-buttons-signIn">
+            <span class="header__buttons-sighIn-text">Войти</span>
+            <span class="header__buttons-sighIn-icon">
+                <i class="uil uil-user"></i>
+              </span>
+          </div>
+          <div class="header__buttons-signUp header__mobileMenu-buttons-signUp">
+            Зарегистрироваться
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="main__container __container">
+        <div class="main__tariffs">
+          <div class="main__tariffs-title title">Тарифы</div>
+          <div class="main__tariffs-info">
+            <div class="main__tariffs-menu">
+              <ul class="main__tariffs-list">
+                <li class="main__tariffs-item start item__active">Стартовый</li>
+                <li class="main__tariffs-item silver">Серебряный</li>
+                <li class="main__tariffs-item gold">Золотой</li>
+                <li class="main__tariffs-item premium">Премиум</li>
+                <li class="main__tariffs-item vip">VIP</li>
+                <li class="main__tariffs-item day">Дневной</li>
+                <li class="main__tariffs-item night">Ночной</li>
+                <li class="main__tariffs-item family">Для пар</li>
+              </ul>
+            </div>
+            <div class="main__tariffs-advantages openBlock" id="start">
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Доступ к "Кардио-зоне"</span>
+              </div>
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Бесплатный Wi-Fi</span>
+              </div>
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Удобный график работы</span>
+              </div>
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Душевые и раздевалки включены</span>
+              </div>
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Скидка на персональные тренировки</span>
+              </div>
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Приветственный подарок</span>
+              </div>
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Бесплатное питание после тренировки</span>
+              </div>
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Разнообразие кардиотренажеров</span>
+              </div>
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Уютная атмосфера</span>
+              </div>
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Возможность заниматься с друзьями</span>
+              </div>
+              <div class="main__tariffs-advantageButton openButton">Забронировать</div>
+            </div>
+            <div class="main__tariffs-advantages" id="silver">
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Доступ ко всем зонам</span>
+              </div>
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Индивидуальная программа тренировок</span>
+              </div>
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Персональный тренер на 1 месяц</span>
+              </div>
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Бесплатный Wi-Fi</span>
+              </div>
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Программа питания включена</span>
+              </div>
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Скидка на групповые занятия</span>
+              </div>
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Консультация диетолога</span>
+              </div>
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Бесплатный абонемент на массаж</span>
+              </div>
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Расширенный выбор тренажеров</span>
+              </div>
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Удобные часы работы</span>
+              </div>
+              <div class="main__tariffs-advantageButton openButton">Забронировать</div>
+            </div>
+            <div class="main__tariffs-advantages" id="gold">
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Доступ ко всем зонам</span>
+              </div>
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Индивидуальная программа тренировок на 3 месяца</span>
+              </div>
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Персональный тренер на 2 месяца</span>
+              </div>
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Бесплатный Wi-Fi</span>
+              </div>
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Программа питания включена на 3 месяца</span>
+              </div>
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Бесплатные групповые занятия</span>
+              </div>
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Консультация диетолога и тренера</span>
+              </div>
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Бесплатный абонемент на массаж на 2 месяца</span>
+              </div>
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Расширенный выбор тренажеров и оборудования</span>
+              </div>
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Удобные часы работы</span>
+              </div>
+              <div class="main__tariffs-advantageButton openButton">Забронировать</div>
+            </div>
+            <div class="main__tariffs-advantages" id="premium">
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Доступ ко всем зонам</span>
+              </div>
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Индивидуальная программа тренировок на 6 месяцев</span>
+              </div>
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Персональный тренер на 4 месяца</span>
+              </div>
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Бесплатный Wi-Fi</span>
+              </div>
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Программа питания включена на 6 месяцев</span>
+              </div>
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Бесплатные групповые занятия</span>
+              </div>
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Консультация диетолога и тренера</span>
+              </div>
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Бесплатный абонемент на массаж на 4 месяца</span>
+              </div>
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Расширенный выбор тренажеров и оборудования</span>
+              </div>
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Удобные часы работы</span>
+              </div>
+              <div class="main__tariffs-advantageButton openButton">Забронировать</div>
+            </div>
+            <div class="main__tariffs-advantages" id="vip">
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Доступ ко всем зонам</span>
+              </div>
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Индивидуальная программа тренировок на год</span>
+              </div>
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Персональный тренер на 6 месяца</span>
+              </div>
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Бесплатный Wi-Fi</span>
+              </div>
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Программа питания включена на год</span>
+              </div>
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Бесплатные групповые занятия</span>
+              </div>
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Консультация диетолога и тренера</span>
+              </div>
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Бесплатный абонемент на массаж на 6 месяца</span>
+              </div>
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Расширенный выбор тренажеров и оборудования</span>
+              </div>
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Удобные часы работы</span>
+              </div>
+              <div class="main__tariffs-advantageButton openButton">Забронировать</div>
+            </div>
+            <div class="main__tariffs-advantages" id="day">
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Доступ к "Кардио-зоне"</span>
+              </div>
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Работа до 16:00</span>
+              </div>
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Бесплатный Wi-Fi</span>
+              </div>
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Удобный график работы</span>
+              </div>
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Душевые и раздевалки включены</span>
+              </div>
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Скидка на персональные тренировки</span>
+              </div>
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Приветственный подарок</span>
+              </div>
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Бесплатное питание после тренировки</span>
+              </div>
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Разнообразие кардиотренажеров</span>
+              </div>
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Уютная атмосфера</span>
+              </div>
+              <div class="main__tariffs-advantageButton openButton">Забронировать</div>
+            </div>
+            <div class="main__tariffs-advantages" id="night">
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Доступ к "Кардио-зоне"</span>
+              </div>
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Работа с 22:00 до 6:00</span>
+              </div>
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Бесплатный Wi-Fi</span>
+              </div>
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Удобный график работы</span>
+              </div>
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Душевые и раздевалки включены</span>
+              </div>
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Скидка на персональные тренировки</span>
+              </div>
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Приветственный подарок</span>
+              </div>
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Бесплатное питание после тренировки</span>
+              </div>
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Разнообразие кардиотренажеров</span>
+              </div>
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Уютная атмосфера</span>
+              </div>
+              <div class="main__tariffs-advantageButton openButton">Забронировать</div>
+            </div>
+            <div class="main__tariffs-advantages" id="family">
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Доступ ко всем зонам</span>
+              </div>
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Индивидуальная программа тренировок на 2 человек</span>
+              </div>
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Персональный тренер на 1 месяц</span>
+              </div>
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Бесплатный Wi-Fi</span>
+              </div>
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Программа питания включена на 2 человек</span>
+              </div>
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Бесплатные групповые занятия на 2 человек</span>
+              </div>
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Консультация диетолога и тренера на 2 человек</span>
+              </div>
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Бесплатный абонемент на массаж на 2 человек</span>
+              </div>
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Расширенный выбор тренажеров и оборудования</span>
+              </div>
+              <div class="main__tariffs-advantage">
+                <img src="./img/check_mark.svg" alt="">
+                <span>Удобные часы работы</span>
+              </div>
+              <div class="main__tariffs-advantageButton openButton">Забронировать</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__container __container">
+        <div class="footer__logo">
+          <span class="footer__logo-text">F</span><span class="footer__logo-text">Z</span>
+        </div>
+        <div class="footer__rules">
+          <div class="footer__rules-title footer__title">Правила клуба</div>
+          <div class="footer__rules-text">С правилами клуба Вы можете
+            ознакомиться <a href="#">здесь</a></div>
+        </div>
+        <div class="footer__contacts">
+          <div class="footer__contacts-title footer__title">Контакты</div>
+          <div class="footer__contacts-address"><span class="footer__contacts-address-title">Адрес: </span>
+            г. Казань, ул. Баумана, д. 38
+          </div>
+          <div class="footer__contacts-info">
+            <div class="footer__contacts-number">
+              <div class="footer__contacts-number-icon">
+                <i class="uil uil-phone"></i>
+              </div>
+              <div class="footer__contacts-number-text">
+                +7 (990) 333 44 66
+              </div>
+            </div>
+            <div class="footer__contacts-email">
+              <div class="footer__contacts-email-icon">
+                <i class="uil uil-at"></i>
+              </div>
+              <div class="footer__contacts-email-text">
+                fitzone@mail.ru
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__social">
+          <div class="footer__social-title footer__title">Соц. сети</div>
+          <div class="footer__social-info">
+            <a href="https://t.me/itrostik" class="footer__social-whatsapp">
+              <div class="footer__social-whatsapp-icon">
+                <i class="uil uil-whatsapp"></i>
+              </div>
+              <div class="footer__social-whatsapp-text">
+                WhatsApp
+              </div>
+            </a>
+            <a href="https://t.me/itrostik" class="footer__social-tg">
+              <div class="footer__social-tg-icon">
+                <i class="uil uil-telegram"></i>
+              </div>
+              <div class="footer__social-tg-text">
+                Telegram
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+  </div>
+  <script src="./js/index.bundle.js"></script>
+  <script src="./js/tariff.bundle.js"></script>
+  <script src="./js/modal.bundle.js"></script>
+</body>
+</html>

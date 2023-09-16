@@ -1,0 +1,70 @@
+.swiper {
+  width: 550px;
+  margin: 0 0 0 70px;
+}
+
+.swiper-slide {
+  height: 450px;
+}
+
+.swiper-slide1 {
+  background: url("../img/swiperImage.png") center/cover no-repeat;
+}
+
+.swiper-slide2 {
+  background: url("../img/work.jpg") center/cover no-repeat;
+}
+
+.swiper-slide3 {
+  background: url("../img/work1.jpg") center/cover no-repeat;
+}
+
+.swiper-slide4 {
+  background: url("../img/work2.jpg") center/cover no-repeat;
+}
+
+.swiper-pagination {
+  background: #222222;
+  padding: 11px;
+  border-radius: 10px;
+}
+
+.swiper-pagination-bullet {
+  width: 70px;
+  height: 70px;
+  line-height: 20px;
+  background: #393939;
+  border-radius: 5px;
+  text-align: center;
+  padding: 25px;
+  color: #FFF;
+  font-size: 35px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+  bottom: auto;
+  top: -60px;
+  left: 370px;
+  width: 350px;
+}
+
+.swiper-pagination-progressbar-fill {
+  background-color: #ff0000;
+}
+
+.swiper-scrollbar {
+  background: rgba(255, 255, 255, 0);
+}
+
+.swiper-scrollbar-drag {
+  cursor: pointer;
+  background-color: #ff0000;
+}
+
+.swiper-horizontal > .swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal {
+  top: 27px;
+  left: 370px;
+  width: 350px;
+}

@@ -1,0 +1,188 @@
+@import "reset";
+@import "vars";
+@import "startstyle";
+@import "header";
+@import "footer";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap');
+
+
+.main{
+  &__team{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    &-title{
+      margin: 50px 0 70px 0;
+    }
+    &-filter{
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      .filter__block{
+        flex: 1 1 25%;
+        display: flex;
+        flex-direction: column;
+      }
+      label{
+        width: 100%;
+        padding: 0 0 0 40px;
+        color: #FFF;
+        font-size: 16px;
+        font-weight: 600;
+        transition: color 0.5s;
+        position: relative;
+        &:hover{
+          .filter__line{
+            color: $accent1;
+          }
+        }
+      }
+
+      .filter__name{
+        color: #FFF;
+        font-size: 30px;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding: 20px 30px;
+        //text-align: center;
+        background: #222222;
+        border-radius: 10px;
+        margin: 0 0 37px 0;
+      }
+
+      .filter__form{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 37px;
+      }
+      .filter__item{
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+      }
+      .filter__style{
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        border: 8px solid #1f1f1f;
+        border-radius: 50%;
+        margin: 0 0 0 -40px;
+      }
+
+      .filter__item:checked + .filter__style::before{
+        content: "";
+        width: 10px;
+        height: 10px;
+        background: $accent1;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+      }
+      .filter__item:checked ~ .filter__line {
+        color: $accent1;
+        border-right: 2px solid $accent1;
+      }
+      .filter__line{
+        transition: color 0.5s;
+        display: block;
+        width: 100%;
+      }
+    }
+    &-member{
+      display: flex;
+      flex-direction: column;
+      flex: 0 1 31%;
+      gap: 10px;
+      cursor: pointer;
+      display: none;
+      .team-member__photo{
+        position: relative;
+        //width: 100%;
+        height: 324px;
+        span{
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          background: $accent1;
+          z-index: 50;
+          width: 100%;
+          height: 0;
+          transition: 0.3s;
+        }
+      }
+      .member__photo1{
+        background: url("../img/trener1.jpg") center / cover no-repeat;
+      }
+      .member__photo2{
+        background: url("../img/trener3.jpg") center / cover no-repeat;
+      }
+      .member__photo3{
+        background: url("../img/trener2.jpg") center / cover no-repeat;
+      }
+      .member__photo4{
+        background: url("../img/trener4.jpg") center / cover no-repeat;
+      }
+
+      .member__photo5{
+        background: url("../img/trener5.jpg") center / cover no-repeat;
+      }
+      .member__photo6{
+        background: url("../img/trener6.jpg") center / cover no-repeat;
+      }
+      .member__photo7{
+        background: url("../img/trener7.jpg") center / cover no-repeat;
+      }
+      .member__photo8{
+        background: url("../img/trener8.jpg") center / cover no-repeat;
+      }
+      .member__photo9{
+        background: url("../img/trener9.jpg") center / cover no-repeat;
+      }
+      .member__photo10{
+        background: url("../img/trener10.jpg") center / cover no-repeat;
+      }
+      .member__photo11{
+        background: url("../img/trener11.jpg") center / cover no-repeat;
+      }
+      &:hover{
+        span{
+          height: 7px;
+        }
+      }
+      .team-member__name{
+        color: #FFF;
+        font-size: 30px;
+        font-weight: 700;
+      }
+      .team-member__special{
+        color: #FFF;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+    &-info{
+      display: flex;
+      flex-wrap: wrap;
+      //justify-content: space-between;
+      gap: 50px 30px;
+    }
+    &-noresult{
+      color: #FFF;
+      font-size: 40px;
+      font-weight: 700;
+      display: none;
+    }
+  }
+}
+
+.open{
+  display: flex;
+}
+
+@import "media";

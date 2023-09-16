@@ -1,0 +1,189 @@
+@import "vars";
+
+.header{
+  padding: 30px 0;
+  margin: 0 0 30px 0;
+  &__inner{
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__logo{
+    cursor: pointer;
+    font-size: 50px;
+    font-family: "Montserrat", sans-serif;
+    &-text:first-child{
+      color: $colorMain;
+      font-weight: 900;
+      transition: 0.5s;
+    }
+    &-text:last-child{
+      color: $accent1;
+      font-weight: 900;
+      transition: 0.5s;
+    }
+    &:hover{
+      span:first-child{
+        color: $accent1;
+        font-weight: 900;
+      }
+      span:last-child{
+        color: $colorMain;
+        font-weight: 900;
+      }
+    }
+  }
+  &__info{
+    display: flex;
+    //justify-content: flex-end;
+    align-items: center;
+    gap: 40px;
+  }
+  &__social, &__mobileMenu-social{
+    display: flex;
+    border-radius: 5px;
+    background: #222;
+    padding: 5px;
+    gap: 10px;
+    &-tg, &-whatsapp{
+      padding: 10px;
+      cursor: pointer;
+      transition: 0.5s;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      i{
+        color: $accent1;
+        font-size: 30px;
+        transition: 0.5s;
+      }
+      &:hover{
+        border-radius: 5px;
+        background: #393939;
+        i{
+          color: $colorMain;
+        }
+      }
+    }
+  }
+  &__buttons, &__mobileMenu-buttons{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+    &-signIn{
+      cursor: pointer;
+      background-color: $accent1;
+      border-radius: 5px;
+      padding: 20px 30px;
+      transition: 0.5s;
+      .header__buttons-sighIn-text, i{
+        transition: 0.5s;
+      }
+      &:hover{
+        .header__buttons-sighIn-text, i{
+          color: $accent1;
+        }
+        background-color: $colorMain;
+      }
+    }
+    &-signUp{
+      cursor: pointer;
+      text-decoration: underline;
+      transition: 0.5s;
+      &:hover{
+        color: $accent1;
+      }
+    }
+  }
+  &__infoMenu{
+    cursor: pointer;
+    font-size: 35px;
+    display: none;
+  }
+  &__menu{
+    flex: 1 1 100%;
+    &-list{
+      width: 100%;
+      display: flex;
+      gap: 20px 30px;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    &-item{
+      color: #FFF;
+      font-size: 16px;
+      font-weight: 600;
+      transition: 0.5s;
+      &:hover{
+        color: $accent1;
+      }
+    }
+  }
+  &__location, &__number, &__mobileMenu-location, &__mobileMenu-number{
+    display: flex;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    align-items: center;
+    i{
+      font-size: 28px;
+      color: $accent1;
+    }
+  }
+  &__mobileMenu{
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    transform: translateX(800px);
+    transition: 0.5s;
+    width: 450px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    background: #0a0a0a;
+    height: 100%;
+    &-closeButton{
+      font-size: 35px;
+      align-self: flex-end;
+      cursor: pointer;
+    }
+    &-list{
+      flex: 1 1 auto;
+    }
+    &-menu{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      li{
+        font-size: 20px;
+      }
+    }
+    &-info{
+      align-items: center;
+      display: flex;
+      gap: 30px;
+    }
+    &-infoBlock{
+      flex: 1 1 auto;
+    }
+  }
+  @media (max-height: 400px) {
+    &__mobileMenu{
+      gap: 5px;
+      justify-content: space-between;
+    }
+  }
+}
+
+.openMenu{
+  transform: translateX(0%);
+}

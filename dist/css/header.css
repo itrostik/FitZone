@@ -1,0 +1,184 @@
+.header {
+  padding: 30px 0;
+  margin: 0 0 30px 0;
+}
+.header__inner {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__logo {
+  cursor: pointer;
+  font-size: 50px;
+  font-family: "Montserrat", sans-serif;
+}
+.header__logo-text:first-child {
+  color: #ffffff;
+  font-weight: 900;
+  transition: 0.5s;
+}
+.header__logo-text:last-child {
+  color: #ff0000;
+  font-weight: 900;
+  transition: 0.5s;
+}
+.header__logo:hover span:first-child {
+  color: #ff0000;
+  font-weight: 900;
+}
+.header__logo:hover span:last-child {
+  color: #ffffff;
+  font-weight: 900;
+}
+.header__info {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.header__social, .header__mobileMenu-social {
+  display: flex;
+  border-radius: 5px;
+  background: #222;
+  padding: 5px;
+  gap: 10px;
+}
+.header__social-tg, .header__social-whatsapp, .header__mobileMenu-social-tg, .header__mobileMenu-social-whatsapp {
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+.header__social-tg i, .header__social-whatsapp i, .header__mobileMenu-social-tg i, .header__mobileMenu-social-whatsapp i {
+  color: #ff0000;
+  font-size: 30px;
+  transition: 0.5s;
+}
+.header__social-tg:hover, .header__social-whatsapp:hover, .header__mobileMenu-social-tg:hover, .header__mobileMenu-social-whatsapp:hover {
+  border-radius: 5px;
+  background: #393939;
+}
+.header__social-tg:hover i, .header__social-whatsapp:hover i, .header__mobileMenu-social-tg:hover i, .header__mobileMenu-social-whatsapp:hover i {
+  color: #ffffff;
+}
+.header__buttons, .header__mobileMenu-buttons {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 400;
+}
+.header__buttons-signIn, .header__mobileMenu-buttons-signIn {
+  cursor: pointer;
+  background-color: #ff0000;
+  border-radius: 5px;
+  padding: 20px 30px;
+  transition: 0.5s;
+}
+.header__buttons-signIn .header__buttons-sighIn-text, .header__buttons-signIn i, .header__mobileMenu-buttons-signIn .header__buttons-sighIn-text, .header__mobileMenu-buttons-signIn i {
+  transition: 0.5s;
+}
+.header__buttons-signIn:hover, .header__mobileMenu-buttons-signIn:hover {
+  background-color: #ffffff;
+}
+.header__buttons-signIn:hover .header__buttons-sighIn-text, .header__buttons-signIn:hover i, .header__mobileMenu-buttons-signIn:hover .header__buttons-sighIn-text, .header__mobileMenu-buttons-signIn:hover i {
+  color: #ff0000;
+}
+.header__buttons-signUp, .header__mobileMenu-buttons-signUp {
+  cursor: pointer;
+  text-decoration: underline;
+  transition: 0.5s;
+}
+.header__buttons-signUp:hover, .header__mobileMenu-buttons-signUp:hover {
+  color: #ff0000;
+}
+.header__infoMenu {
+  cursor: pointer;
+  font-size: 35px;
+  display: none;
+}
+.header__menu {
+  flex: 1 1 100%;
+}
+.header__menu-list {
+  width: 100%;
+  display: flex;
+  gap: 20px 30px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.header__menu-item {
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.5s;
+}
+.header__menu-item:hover {
+  color: #ff0000;
+}
+.header__location, .header__number, .header__mobileMenu-location, .header__mobileMenu-number {
+  display: flex;
+  gap: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  align-items: center;
+}
+.header__location i, .header__number i, .header__mobileMenu-location i, .header__mobileMenu-number i {
+  font-size: 28px;
+  color: #ff0000;
+}
+.header__mobileMenu {
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  transform: translateX(800px);
+  transition: 0.5s;
+  width: 450px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  background: #0a0a0a;
+  height: 100%;
+}
+.header__mobileMenu-closeButton {
+  font-size: 35px;
+  align-self: flex-end;
+  cursor: pointer;
+}
+.header__mobileMenu-list {
+  flex: 1 1 auto;
+}
+.header__mobileMenu-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.header__mobileMenu-menu li {
+  font-size: 20px;
+}
+.header__mobileMenu-info {
+  align-items: center;
+  display: flex;
+  gap: 30px;
+}
+.header__mobileMenu-infoBlock {
+  flex: 1 1 auto;
+}
+@media (max-height: 400px) {
+  .header__mobileMenu {
+    gap: 5px;
+    justify-content: space-between;
+  }
+}
+
+.openMenu {
+  transform: translateX(0%);
+}

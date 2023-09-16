@@ -1,0 +1,303 @@
+.modal, .modal__complete, .modal__enter, .modal__signUp {
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.modal__closeButtonIcon, .modal__complete__closeButtonIcon, .modal__enter__closeButtonIcon, .modal__signUp__closeButtonIcon {
+  z-index: 150;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+.modal__closeButtonIcon i, .modal__complete__closeButtonIcon i, .modal__enter__closeButtonIcon i, .modal__signUp__closeButtonIcon i {
+  font-size: 40px;
+  transition: 0.5s;
+}
+.modal__closeButtonIcon i:hover, .modal__complete__closeButtonIcon i:hover, .modal__enter__closeButtonIcon i:hover, .modal__signUp__closeButtonIcon i:hover {
+  color: #ff0000;
+}
+.modal__window, .modal__complete__window, .modal__enter__window, .modal__signUp__window {
+  background: #ffffff;
+  max-width: 840px;
+  width: 100%;
+  padding: 40px;
+  position: relative;
+  border-radius: 5px;
+  animation: 0.7s onslide forwards;
+  max-height: 100%;
+  transform: translateY(-500%) scale(0.8);
+}
+@keyframes onslide {
+  from {
+    transform: translateY(-500%) scale(0.8);
+  }
+  80% {
+    transform: translateY(0%) scale(0.8);
+  }
+  to {
+    transform: translateY(0%) scale(1);
+  }
+}
+.modal__window-title, .modal__complete__window-title, .modal__enter__window-title, .modal__signUp__window-title {
+  margin: 0 0 30px 0;
+}
+.modal__window-form, .modal__complete__window-form, .modal__enter__window-form, .modal__signUp__window-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 10px;
+}
+.modal__window-form label, .modal__complete__window-form label, .modal__enter__window-form label, .modal__signUp__window-form label {
+  flex: 1 1 48%;
+}
+.modal__window-form input, .modal__complete__window-form input, .modal__enter__window-form input, .modal__signUp__window-form input {
+  width: 100%;
+  background: #F1F1F1;
+  padding: 20px 15px;
+  border-radius: 10px;
+  color: #000;
+  font-size: 18px;
+}
+.modal__window-form .modal__window-button, .modal__complete__window-form .modal__window-button, .modal__enter__window-form .modal__window-button, .modal__signUp__window-form .modal__window-button {
+  cursor: pointer;
+  background: #ff0000;
+  text-align: center;
+  padding: 20px 15px;
+  border-radius: 10px;
+  flex: 1 1 48%;
+  transition: 0.5s;
+}
+.modal__window-form .modal__window-button:hover, .modal__complete__window-form .modal__window-button:hover, .modal__enter__window-form .modal__window-button:hover, .modal__signUp__window-form .modal__window-button:hover {
+  background: #3f3f3f;
+  color: #FFFFFF;
+}
+.modal-title, .modal__complete-title, .modal__enter-title, .modal__signUp-title {
+  color: #000;
+  font-size: 44px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+@media (max-width: 425px) {
+  .modal__closeButtonIcon {
+    top: 5px;
+    right: 5px;
+  }
+  .modal__closeButtonIcon i {
+    font-size: 25px;
+  }
+}
+.modal__complete {
+  display: none;
+}
+.modal__complete-title {
+  font-size: 40px;
+  text-align: center;
+  margin: 0 0 30px 0;
+}
+.modal__complete-text {
+  color: #000;
+  font-size: 18px;
+  text-align: center;
+  margin: 0 0 30px 0;
+}
+.modal__complete .modal__closeButton {
+  cursor: pointer;
+  margin: 0 auto;
+  text-align: center;
+  background: #ff0000;
+  color: #ffffff;
+  padding: 20px 15px;
+  border-radius: 10px;
+  max-width: 350px;
+  transition: 0.5s;
+}
+.modal__complete .modal__closeButton:hover {
+  background: #3f3f3f;
+  color: #FFFFFF;
+}
+
+.modal__enter-title {
+  margin: 0 0 60px 0;
+  text-align: center;
+}
+.modal__enter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.modal__enter-form label {
+  width: 100%;
+  flex: 1 1 auto;
+}
+.modal__enter-form input {
+  width: 100%;
+  background: #F1F1F1;
+  padding: 20px 15px;
+  border-radius: 10px;
+  color: #000;
+  font-size: 18px;
+  transition: 0.5s;
+}
+.modal__enter-form input:focus {
+  box-shadow: 0 0 5px #ff0000;
+}
+.modal__enter-button {
+  cursor: pointer;
+  background: #ff0000;
+  text-align: center;
+  padding: 20px 15px;
+  border-radius: 10px;
+  flex: 1 1 auto;
+  transition: 0.5s;
+}
+.modal__enter-button:hover {
+  background: #3f3f3f;
+  color: #FFFFFF;
+}
+
+.openModal {
+  display: flex;
+}
+
+@media (max-width: 640px) {
+  .modal__window-title {
+    text-align: center;
+    font-size: 30px;
+  }
+  .modal__window-form label {
+    flex: 1 1 100%;
+  }
+  .modal__window-button {
+    flex: 1 1 100%;
+  }
+  .modal__enter-title {
+    margin: 0 0 60px 0;
+    text-align: center;
+  }
+  .modal__enter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .modal__enter-form label {
+    width: 100%;
+  }
+  .modal__enter-form input {
+    width: 100%;
+    background: #F1F1F1;
+    padding: 20px 15px;
+    border-radius: 10px;
+    color: #000;
+    font-size: 18px;
+  }
+  .modal__enter-button {
+    cursor: pointer;
+    background: #ff0000;
+    text-align: center;
+    padding: 20px 15px;
+    border-radius: 10px;
+    flex: 1 1 48%;
+    transition: 0.5s;
+  }
+  .modal__enter-button:hover {
+    background: #3f3f3f;
+    color: #FFFFFF;
+  }
+}
+@media (max-width: 470px) {
+  .modal__signUp .modal__window {
+    padding: 20px;
+  }
+}
+@media (max-width: 420px) {
+  .modal__window {
+    padding: 20px;
+  }
+  .modal__window-title {
+    text-align: center;
+    font-size: 22px;
+  }
+  .modal__window-form label {
+    flex: 1 1 100%;
+  }
+  .modal__window-button {
+    flex: 1 1 100%;
+  }
+  .modal__enter-title {
+    font-size: 30px;
+    width: 100%;
+    margin: 0 0 60px 0;
+    text-align: center;
+  }
+  .modal__enter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .modal__enter-form label {
+    width: 100%;
+  }
+  .modal__enter-button {
+    cursor: pointer;
+    background: #ff0000;
+    text-align: center;
+    padding: 20px 15px;
+    border-radius: 10px;
+    transition: 0.5s;
+  }
+  .modal__enter-button:hover {
+    background: #3f3f3f;
+    color: #FFFFFF;
+  }
+}
+@media (max-width: 325px) {
+  .modal__window {
+    padding: 20px;
+  }
+  .modal__window-title {
+    text-align: center;
+    font-size: 22px;
+  }
+  .modal__window-form label {
+    flex: 1 1 100%;
+  }
+  .modal__window-form input {
+    font-size: 16px;
+  }
+  .modal__window-button {
+    flex: 1 1 100%;
+  }
+  .modal__signUp input {
+    font-size: 16px;
+  }
+}
+@media (max-height: 635px) {
+  .modal__window {
+    margin: 60px 0 0 0;
+  }
+  .modal__signUp-form {
+    gap: 10px;
+  }
+  .modal__signUp-title {
+    margin: 0 0 20px 0;
+  }
+}
+@media (max-width: 565px) {
+  .modal__complete-title {
+    font-size: 30px;
+  }
+}
+@media (max-width: 448px) {
+  .modal__complete-title {
+    font-size: 25px;
+  }
+}

@@ -1,0 +1,61 @@
+@import "reset";
+@import "vars";
+@import "startstyle";
+@import "header";
+@import "footer";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap');
+
+
+.main{
+  flex: 1 1 auto;
+  &__group{
+    &-title{
+      margin: 0 0 70px 0;
+    }
+    &-info{
+      display: flex;
+      gap: 50px 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .group-training{
+      flex: 0 1 32%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      &__title{
+        color: #FFF;
+        font-size: 30px;
+        font-weight: 600;
+      }
+      &__text{
+        color: rgba(255, 255, 255, 0.80);
+        font-size: 20px;
+        flex: 1 1 auto;
+      }
+      &__image{
+        width: 100%;
+        height: 300px;
+        background: url("../img/group.jpg") 0 0 /cover no-repeat;
+        border-radius: 5px;
+      }
+      &__button{
+        border-radius: 5px;
+        text-align: center;
+        max-width: 400px;
+        background: $accent1;
+        padding: 20px 15px;
+        color: #FFF;
+        font-size: 18px;
+        transition: 0.5s;
+        cursor: pointer;
+        &:hover{
+          background: $colorMain;
+          color: $accent1;
+        }
+      }
+    }
+  }
+}
+
+@import "media";

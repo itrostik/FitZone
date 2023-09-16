@@ -1,0 +1,890 @@
+/* Стили для HEADER и FOOTER */
+
+.header{
+  @media (max-width: 1200px) {
+    &__location, &__number, &__social{
+      display: none;
+    }
+    &__infoMenu{
+      display: block;
+    }
+  }
+  @media (max-width: 915px) {
+    &__menu{
+      display: none;
+    }
+  }
+  @media (max-width: 768px) {
+    &__logo{
+      font-size: 40px;
+    }
+    &__info{
+      gap: 30px;
+    }
+    &__buttons{
+      gap: 20px;
+      &-signIn{
+        font-size: 14px;
+        padding: 15px 20px;
+      }
+      &-signUp{
+        font-size: 14px;
+      }
+    }
+    &__mobileMenu{
+      width: 100%;
+      //&-menu{
+      //  gap: 30px;
+      //}
+    }
+  }
+  @media (max-width: 700px) {
+    margin: 0;
+  }
+  @media (max-width: 590px) {
+    &__buttons{
+      display: none;
+    }
+  }
+  @media (max-width: 430px) {
+    &__mobileMenu{
+      gap: 30px;
+      padding: 15px;
+      li{
+        font-size: 16px;
+      }
+    }
+  }
+  @media (max-width: 375px) {
+    &__mobileMenu{
+      padding: 10px;
+      &-infoBlock{
+        gap: 10px;
+      }
+      &-location, &-number{
+        font-size: 12px;
+      }
+    }
+  }
+}
+.footer{
+  @media (max-width: 998px) {
+    &__container{
+      gap: 70px;
+    }
+  }
+}
+
+/*--------*/
+
+/*----Стили для index.html------*/
+
+.main{
+  &__start{
+    @media (max-width: 1350px) {
+      .swiper{
+        width: 400px;
+        .swiper-slide1{
+          background: url("../img/swiperImage.png") center 0/600px 350px no-repeat;
+        }
+        .swiper-slide2{
+          background: url("../img/work.jpg") center 0/600px 350px no-repeat;
+        }
+        .swiper-slide3{
+          background: url("../img/work1.jpg") center 0/600px 350px no-repeat;
+        }
+        .swiper-slide4{
+          background: url("../img/work2.jpg") center 0/600px 350px no-repeat;
+        }
+      }
+      .swiper-pagination-bullet{
+        width: 40px;
+        height: 40px;
+        line-height: 20px;
+        background: #393939;
+        border-radius: 5px;
+        text-align: center;
+        padding: 10px;
+        color: #FFF;
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+      .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction  {
+        bottom: auto;
+        top: -30px;
+        left: 300px;
+        width: 250px;
+      }
+      .swiper-horizontal>.swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal{
+        top: 27px;
+        left: 300px;
+        width: 250px;
+      }
+      &-backgroundText{
+        font-size: 118px;
+        top: 105px;
+        left: -200px;
+      }
+      &-title{
+        font-size: 50px;
+      }
+      &-button{
+        padding: 20px 15px;
+        max-width: 200px;
+        text-align: center;
+      }
+    }
+    @media (max-width: 1190px) {
+      .swiper{
+        margin: 0 0 0 40px;
+      }
+      .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction  {
+        top: auto;
+        bottom: 70px;
+        left: 115px;
+        width: 250px;
+      }
+      .swiper-horizontal>.swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal{
+        top: auto;
+        bottom: 70px;
+        left: 115px;
+        width: 250px;
+      }
+      &-backgroundText{
+        left: -220px;
+      }
+    }
+    @media (max-width: 910px) {
+      &-info{
+        max-width: 1000px;
+        min-width: 100px;
+      }
+      &-title{
+        font-size: 40px;
+      }
+      &-subtitle{
+        font-size: 14px;
+      }
+      &-advantages{
+        gap: 10px;
+        justify-content: space-between;
+      }
+      .advantages-block__title{
+        font-size: 26px;
+      }
+      .advantages-block__text{
+        font-size: 12px;
+      }
+    }
+    @media (max-width: 830px) {
+      .swiper{
+        width: 350px;
+        .swiper-slide1{
+          background: url("../img/swiperImage.png") center 0/500px 300px no-repeat;
+        }
+        .swiper-slide2{
+          background: url("../img/work.jpg") center 0/500px 300px no-repeat;
+        }
+        .swiper-slide3{
+          background: url("../img/work1.jpg") center 0/500px 300px no-repeat;
+        }
+        .swiper-slide4{
+          background: url("../img/work2.jpg") center 0/500px 300px no-repeat;
+        }
+      }
+      .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction  {
+        bottom: 120px;
+        top: auto;
+        left: 95px;
+        width: 250px;
+      }
+      .swiper-horizontal>.swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal{
+        top: auto;
+        bottom: 120px;
+        left: 95px;
+        width: 250px;
+      }
+      &-backgroundText{
+        font-size: 100px;
+        top: 90px;
+        left: -190px;
+      }
+    }
+    @media (max-width: 700px) {
+      &{
+        margin: 0 0 100px 0;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+      }
+      &-info{
+        gap: 30px;
+      }
+      &-subtitle{
+        margin: -30px 0 0 0;
+      }
+      .swiper{
+        width: 350px;
+        margin: 0;
+      }
+      .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction  {
+        bottom: 120px;
+        top: auto;
+        left: 55px;
+        width: 250px;
+      }
+      .swiper-horizontal>.swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal{
+        top: auto;
+        bottom: 120px;
+        left: 55px;
+        width: 250px;
+      }
+      &-backgroundText{
+        left: -230px;
+      }
+    }
+    @media (max-width: 430px) {
+      .swiper{
+        width: 300px;
+        height: 450px;
+        .swiper-slide1{
+          background: url("../img/swiperImage.png") center 0/500px 250px no-repeat;
+        }
+        .swiper-slide2{
+          background: url("../img/work.jpg") center 0/500px 250px no-repeat;
+        }
+        .swiper-slide3{
+          background: url("../img/work1.jpg") center 0/500px 250px no-repeat;
+        }
+        .swiper-slide4{
+          background: url("../img/work2.jpg") center 0/500px 250px no-repeat;
+        }
+      }
+      .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction  {
+        bottom: 170px;
+        top: auto;
+        left: 25px;
+        width: 250px;
+      }
+      .swiper-horizontal>.swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal{
+        top: auto;
+        bottom: 170px;
+        left: 25px;
+        width: 250px;
+      }
+    }
+  }
+  &__gym{
+    @media (max-width: 1120px) {
+      &-body{
+        align-items: center;
+      }
+      &-title{
+        font-size: 50px;
+      }
+      &-subtitle{
+        font-size: 20px;
+      }
+      &-text{
+        font-size: 14px;
+        max-width: 430px;
+      }
+      &-work, &-metro, &-address, &-number, &-email{
+        font-size: 18px;
+        span{
+          font-size: 18px;
+        }
+      }
+      &-advantages{
+        &-block{
+          max-width: 200px;
+          height: 180px;
+        }
+      }
+    }
+    @media (max-width: 910px) {
+      &-info{
+      }
+      &-body{
+        flex-wrap: wrap;
+      }
+      &-advantages{
+        justify-content: center;
+      }
+      &-text{
+        width: 100%;
+        font-size: 16px;
+      }
+      &-image{
+        width: 100%;
+        height: 500px;
+        background: url("../img/fitness.jpg") center/cover no-repeat;
+        margin: 0 0 30px 0;
+      }
+    }
+    @media (max-width: 600px) {
+      &-image{
+        width: 100%;
+        height: 400px;
+        background: url("../img/fitness.jpg") center/cover no-repeat;
+        margin: 0 0 30px 0;
+      }
+      &-button{
+        padding: 20px 15px;
+        max-width: 200px;
+        text-align: center;
+        font-size: 14px;
+      }
+    }
+    @media (max-width: 460px) {
+      &-advantages{
+        gap: 10px;
+        &-block{
+          width: 150px;
+          height: 150px;
+          padding: 10px;
+        }
+        &-title{
+          font-size: 16px;
+        }
+        &-text{
+          font-size: 14px;
+        }
+      }
+      &-image{
+        width: 100%;
+        height: 300px;
+        background: url("../img/fitness.jpg") center/cover no-repeat;
+        margin: 0 0 30px 0;
+      }
+    }
+    @media (max-width: 375px) {
+      &-title{
+        font-size: 40px;
+      }
+      &-subtitle{
+        font-size: 18px;
+      }
+    }
+    @media (max-width: 350px) {
+      &-advantages{
+        gap: 10px;
+        &-block{
+          width: 135px;
+          height: 140px;
+          padding: 10px;
+        }
+        &-title{
+          font-size: 14px;
+        }
+        &-text{
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  &__zone{
+    @media (max-width: 1160px) {
+      &-body{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+      }
+      &-list{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 40px;
+      }
+      &-image{
+        cursor: pointer;
+        transition: 0.5s;
+        width: 100%;
+        img{
+          width: 100%;
+          height: 500px;
+        }
+        &:hover{
+          transform: scale(1.1);
+        }
+      }
+    }
+    @media (max-width: 880px) {
+      &-list{
+        gap: 20px;
+      }
+      &-image{
+        img{
+          min-height: 200px;
+          height: auto;
+        }
+      }
+    }
+    @media (max-width: 630px) {
+      label{
+        width: 100%;
+      }
+    }
+    @media (max-width: 600px) {
+      &-title{
+        font-size: 50px;
+      }
+    }
+    @media (max-width: 460px) {
+      &-title{
+        font-size: 40px;
+      }
+    }
+    @media (max-width: 375px) {
+      &-title{
+        font-size: 35px;
+      }
+    }
+  }
+  &__request{
+    @media (max-width: 900px) {
+      &-title{
+        font-size: 50px;
+      }
+      &-form{
+        width: 100%;
+        .request-form{
+          align-items: center;
+          flex-direction: column;
+        }
+        label{
+          width: 100%;
+          .form__number, .form__name{
+            width: 100%;
+          }
+        }
+      }
+    }
+    @media (max-width: 540px) {
+      &-title{
+        font-size: 40px;
+      }
+      &-subtitle{
+        font-size: 20px;
+      }
+    }
+    @media (max-width: 435px) {
+      &-inner{
+        gap: 40px;
+      }
+      &-title{
+        font-size: 30px;
+      }
+      &-subtitle{
+        margin: -30px 0 0 0;
+        font-size: 14px;
+      }
+      .form__button{
+        width: 100%;
+      }
+    }
+    @media (max-width: 335px) {
+      &-title{
+        font-size: 28px;
+      }
+      &-subtitle{
+        font-size: 14px;
+      }
+    }
+  }
+  &__team{
+    @media (max-width: 1024px) {
+      //&-member{
+      //  width: auto;
+      //}
+      //&-title{
+      //  font-size: 50px;
+      //}
+      //&-info{
+      //  gap: 60px;
+      //  flex-wrap: wrap;
+      //  justify-content: space-between;
+      //}
+    }
+    @media (max-width: 910px) {
+      &-info{
+        justify-content: center;
+        gap: 70px;
+      }
+    }
+    @media (max-width: 530px) {
+      &-title{
+        font-size: 40px;
+      }
+    }
+    @media (max-width: 425px) {
+      .team-member__name{
+        font-size: 22px;
+      }
+      .team-member__special{
+        font-size: 16px;
+      }
+    }
+  }
+  &__question{
+    @media (max-width: 1200px) {
+      &-title{
+        font-size: 40px;
+      }
+    }
+    @media (max-width: 742px) {
+      &-inner{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+      }
+      &-image{
+        img{
+          max-width: 500px;
+          width: 100%;
+        }
+      }
+      &-info{
+        flex: 1 1 auto;
+        text-align: center;
+      }
+      .main__request-form{
+        width: 100%;
+      }
+      .question-form{
+        width: 100%;
+      }
+    }
+    @media (max-width: 425px) {
+      .form__button{
+        width: 100%;
+      }
+    }
+  }
+}
+
+/*------*/
+
+
+/*-----Стили для fitness.html------*/
+
+.main{
+  &__fitness{
+    @media (max-width: 1024px) {
+      &-title{
+        font-size: 50px;
+        margin: 0 0 20px 0;
+      }
+      .fitness-zone{
+        &__title{
+          font-size: 30px;
+        }
+        &__text{
+          font-size: 18px;
+        }
+      }
+    }
+    @media (max-width: 768px) {
+      &-title{
+        font-size: 40px;
+      }
+      .fitness-zone{
+        flex-wrap: wrap;
+      }
+    }
+    @media (max-width: 375px) {
+      &-title{
+        font-size: 30px;
+      }
+      .fitness-zone{
+        &__title{
+          font-size: 24px;
+        }
+        &__text{
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+/*------*/
+
+
+/*-----Стили для tariff.html------*/
+
+.main{
+  &__tariffs{
+    @media (max-width: 888px) {
+      &-advantage{
+        width: 100%;
+      }
+      &-title{
+        font-size: 50px;
+        margin: 0 0 20px 0;
+      }
+    }
+    @media (max-width: 768px) {
+      &-title{
+        font-size: 40px;
+      }
+      &-item{
+        font-size: 20px;
+      }
+      &-advantageButton{
+        margin: 50px 0 0 0;
+      }
+    }
+    @media (max-width: 575px) {
+      &-info{
+        gap: 15px;
+      }
+      &-item{
+        font-size: 16px;
+        padding: 15px;
+      }
+      &-advantageButton{
+        margin: 30px 0 0 0;
+      }
+      &-advantage{
+        span{
+          font-size: 16px;
+        }
+      }
+      &-advantages{
+        gap: 15px;
+      }
+    }
+    @media (max-width: 475px) {
+      &-list{
+        gap: 20px;
+      }
+      &-info{
+        gap: 10px;
+      }
+      &-item{
+        font-size: 16px;
+        padding: 15px 10px;
+      }
+      &-advantageButton{
+        margin: 20px 0 0 0;
+        width: 100%;
+        max-width: 100%;
+        padding: 15px 10px;
+        font-size: 16px;
+      }
+      &-advantage{
+        span{
+          font-size: 14px;
+        }
+      }
+      &-advantages{
+        gap: 15px;
+      }
+    }
+    @media (max-width: 385px) {
+      &-title{
+        font-size: 30px;
+      }
+      &-info{
+        gap: 10px;
+      }
+      &-item{
+        font-size: 12px;
+        padding: 15px 5px;
+      }
+      &-advantageButton{
+        margin: 20px 0 0 0;
+        width: 100%;
+        max-width: 100%;
+        padding: 15px 10px;
+        font-size: 16px;
+      }
+      &-advantage{
+        span{
+          font-size: 14px;
+        }
+      }
+      &-advantages{
+        gap: 15px;
+        padding: 10px;
+      }
+    }
+    @media (max-width: 335px) {
+      &-info{
+        gap: 10px;
+      }
+      &-item{
+        font-size: 12px;
+        padding: 15px 5px;
+      }
+      &-advantageButton{
+        margin: 20px 0 0 0;
+        width: 100%;
+        max-width: 100%;
+        padding: 15px 10px;
+        font-size: 16px;
+      }
+      &-advantage{
+        span{
+          font-size: 13px;
+        }
+      }
+      &-advantages{
+        gap: 15px;
+        padding: 10px;
+      }
+    }
+  }
+}
+
+/*------*/
+
+/*-----Стили для kids.html-------*/
+.main{
+  &__kids{
+    @media (max-width: 1024px) {
+      &-title{
+        font-size: 50px;
+        margin: 0 0 20px 0;
+      }
+      .kids-zone{
+        &__title{
+          font-size: 30px;
+        }
+        &__text{
+          font-size: 18px;
+        }
+      }
+    }
+    @media (max-width: 768px) {
+      &-title{
+        font-size: 40px;
+      }
+      .kids-zone{
+        flex-wrap: wrap;
+      }
+    }
+    @media (max-width: 375px) {
+      &-title{
+        font-size: 30px;
+      }
+      .kids-zone{
+        &__title{
+          font-size: 24px;
+        }
+        &__text{
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+/*------------*/
+
+/*-----Стили для group.html--------*/
+
+.main{
+  &__group{
+    @media (max-width: 1039px) {
+      &-title{
+        font-size: 50px;
+        margin: 0 0 20px 0;
+      }
+      .group-training{
+        flex: 1 1 47%;
+      }
+    }
+    @media (max-width: 768px) {
+      &-title{
+        font-size: 40px;
+      }
+    }
+    @media (max-width: 605px) {
+      .group-training{
+        flex: 1 1 100%;
+      }
+    }
+    @media (max-width: 425px) {
+      .group-training{
+        &__button{
+          font-size: 14px;
+          max-width: 300px;
+          padding: 15px;
+          align-self: center;
+        }
+      }
+    }
+    @media (max-width: 375px) {
+      &-title{
+        font-size: 30px;
+      }
+      .group-training{
+        &__text{
+          font-size: 16px;
+        }
+        &__title{
+          font-size: 20px;
+        }
+        &__button{
+          font-size: 14px;
+          max-width: 300px;
+          padding: 15px;
+          align-self: center;
+        }
+      }
+    }
+  }
+}
+
+/*-----Стили для team.html---------*/
+
+.main{
+  &__team{
+    @media (max-width: 1024px) {
+      gap: 50px;
+      &-info{
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      &-filter{
+        flex-wrap: wrap;
+        gap: 70px 20px;
+      }
+      .team-member__name{
+        font-size: 22px;
+      }
+      .team-member__special{
+        font-size: 16px;
+      }
+      &-title{
+        margin: 0;
+      }
+    }
+    @media (max-width: 910px) {
+      .main__team-member{
+        flex: 0 1 45%;
+      }
+    }
+    @media (max-width: 739px) {
+      .main__team-member{
+        flex: 0 1 60%;
+      }
+    }
+    @media (max-width: 475px) {
+      .main__team-member{
+        flex: 0 1 100%;
+      }
+      .filter__name{
+        font-size: 20px;
+      }
+    }
+    @media (max-width: 340px) {
+      .filter__name{
+        padding: 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>FitZone</title>
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+  <link rel="stylesheet" href="./css/modal.css">
+  <link rel="stylesheet" href="./css/team.css">
+  <link rel="stylesheet" href="./css/trener.css">
+</head>
+<body>
+  <div class="modal">
+    <div class="modal__closeButtonIcon">
+      <i class="uil uil-multiply"></i>
+    </div>
+    <div class="modal__window">
+      <div class="modal__window-title modal-title">Оставить заявку</div>
+      <form action="#" class="modal__window-form">
+        <label>
+          <input type="text" placeholder="Фамилия Имя Отчество" class="modal__form-name">
+        </label>
+        <label>
+          <input type="tel" placeholder="Телефон" class="modal__form-number">
+        </label>
+        <label>
+          <input type="email" placeholder="Почта" class="modal__form-mail">
+        </label>
+        <div class="modal__window-button">Свяжитесь со мной</div>
+      </form>
+    </div>
+  </div>
+  <div class="modal__complete">
+    <div class="modal__closeButtonIcon">
+      <i class="uil uil-multiply"></i>
+    </div>
+    <div class="modal__window">
+      <div class="modal__complete-title modal-title">Ваша заявка успешно принята</div>
+      <div class="modal__complete-text">Наш менеджер с Вами скоро свяжется</div>
+      <div class="modal__complete-button modal__closeButton">Вернуться на главную</div>
+    </div>
+  </div>
+  <div class="modal__enter">
+    <div class="modal__closeButtonIcon">
+      <i class="uil uil-multiply"></i>
+    </div>
+    <div class="modal__window">
+      <div class="modal__enter-title modal-title">Войти</div>
+      <form action="#" method="get" class="modal__enter-form">
+        <label>
+          <input type="text" name="login" placeholder="Логин">
+        </label>
+        <label>
+          <input type="password" name="password" placeholder="Пароль">
+        </label>
+        <div class="modal__enter-button">ВОЙТИ</div>
+      </form>
+    </div>
+  </div>
+  <div class="modal__signUp modal__enter">
+    <div class="modal__closeButtonIcon">
+      <i class="uil uil-multiply"></i>
+    </div>
+    <div class="modal__window">
+      <div class="modal__signUp-title modal__enter-title modal-title">Регистрация</div>
+      <form action="#" method="get" class="modal__signUp-form modal__enter-form">
+        <label>
+          <input type="text" name="name" placeholder="Фамилия Имя Отчество">
+        </label>
+        <label>
+          <input type="email" name="email" placeholder="Почта">
+        </label>
+        <label>
+          <input type="text" name="login" placeholder="Логин">
+        </label>
+        <label>
+          <input type="password" name="password" placeholder="Пароль">
+        </label>
+        <div class="modal__signUp-button modal__enter-button">ЗАРЕГИСТРИРОВАТЬСЯ</div>
+      </form>
+    </div>
+  </div>
+  <div class="trener">
+    <div class="trener__closeButtonIcon">
+      <i class="uil uil-multiply"></i>
+    </div>
+    <div class="trener__window" data-simplebar>
+      <div class="trener__image">
+      </div>
+      <div class="trener__info">
+        <div class="trener__name">Алина Иванова</div>
+        <div class="trener__special">Персональный тренер по кардио</div>
+        <div class="trener__text">Тренер по кардио-тренингу, знает все о кардио-нагрузках и помогает своим клиентам
+          улучшить выносливость и снижать вес.
+        </div>
+        <div class="trener__button openButton">ЗАПИСАТЬСЯ</div>
+      </div>
+    </div>
+  </div>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__container __container">
+        <div class="header__inner">
+          <div class="header__logo">
+            <span class="header__logo-text">Fit</span><span class="header__logo-text">Zone</span>
+          </div>
+          <div class="header__info">
+            <div class="header__location">
+              <div class="header__location-icon">
+                <i class="uil uil-map-marker"></i>
+              </div>
+              <div class="header__location-text">Баумана 38</div>
+            </div>
+            <div class="header__number">
+              <div class="header__number-icon">
+                <i class="uil uil-phone"></i>
+              </div>
+              <div class="header__number-text">+7 (990) 333 44 66</div>
+            </div>
+            <div class="header__social">
+              <a href="https://t.me/itrostik" class="header__social-tg">
+                <i class="uil uil-telegram"></i>
+              </a>
+              <a href="https://t.me/itrostik" class="header__social-whatsapp">
+                <i class="uil uil-whatsapp"></i>
+              </a>
+            </div>
+            <div class="header__buttons">
+              <div class="header__buttons-signIn">
+                <span class="header__buttons-sighIn-text">Войти</span>
+                <span class="header__buttons-sighIn-icon">
+                    <i class="uil uil-user"></i>
+                  </span>
+              </div>
+              <div class="header__buttons-signUp">
+                Зарегистрироваться
+              </div>
+            </div>
+            <div class="header__infoMenu">
+              <i class="uil uil-list-ui-alt"></i>
+            </div>
+          </div>
+          <div class="header__menu">
+            <ul class="header__menu-list">
+              <li class="header__menu-item">
+                <a href="./index.html" class="header__menu-link">О клубе</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="./fitness.html" class="header__menu-link">Фитнес-зоны</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="./tariff.html" class="header__menu-link">Тарифы</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="./kids.html" class="header__menu-link">Детский фитнес</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="./group.html" class="header__menu-link">Групповые программы</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="./team.html" class="header__menu-link">Тренеры</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="header__mobileMenu">
+        <div class="header__mobileMenu-closeButton">
+          <i class="uil uil-times"></i>
+        </div>
+        <div class="header__mobileMenu-list">
+          <ul class="header__mobileMenu-menu">
+            <li class="header__menu-item">
+              <a href="./index.html" class="header__menu-link">О клубе</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="./fitness.html" class="header__menu-link">Фитнес-зоны</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="./tariff.html" class="head__menu-link">Тарифы</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="./kids.html" class="header__menu-link">Детский фитнес</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="./group.html" class="header__menu-link">Групповые программы</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="./team.html" class="header__menu-link">Тренеры</a>
+            </li>
+          </ul>
+        </div>
+        <div class="header__mobileMenu-info">
+          <div class="header__mobileMenu-infoBlock">
+            <div class="header__mobileMenu-location">
+              <div class="header__location-icon">
+                <i class="uil uil-map-marker"></i>
+              </div>
+              <div class="header__location-text">Баумана 38</div>
+            </div>
+            <div class="header__mobileMenu-number">
+              <div class="header__number-icon">
+                <i class="uil uil-phone"></i>
+              </div>
+              <div class="header__number-text">+7 (990) 333 44 66</div>
+            </div>
+          </div>
+          <div class="header__mobileMenu-social">
+            <a href="https://t.me/itrostik" class="header__social-tg">
+              <i class="uil uil-telegram"></i>
+            </a>
+            <a href="https://t.me/itrostik" class="header__social-whatsapp">
+              <i class="uil uil-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+        <div class="header__mobileMenu-buttons">
+          <div class="header__buttons-signIn header__mobileMenu-buttons-signIn">
+            <span class="header__buttons-sighIn-text">Войти</span>
+            <span class="header__buttons-sighIn-icon">
+                    <i class="uil uil-user"></i>
+                  </span>
+          </div>
+          <div class="header__buttons-signUp header__mobileMenu-buttons-signUp">
+            Зарегистрироваться
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="main__container __container">
+        <div class="main__team">
+          <div class="main__team-title title">Тренеры</div>
+          <div class="main__team-filter filter">
+            <div class="filter__gender filter__block">
+              <div class="filter__gender-name filter__name">ПОЛ</div>
+              <form action="#" class="filter__gender-form filter__form">
+                <label>
+                  <input class="filter__gender-item filter__item" type="radio" name="gender" value="male">
+                  <span class="filter__gender-style filter__style"></span>
+                  <span class="filter__line">Мужчина</span>
+                </label>
+                <label>
+                  <input class="filter__gender-item filter__item" type="radio" name="gender" value="female">
+                  <span class="filter__gender-style filter__style"></span>
+                  <span class="filter__line">Женщина</span>
+                </label>
+              </form>
+            </div>
+            <div class="filter__directions filter__block">
+              <div class="filter__directions-name filter__name">НАПРАВЛЕНИЕ</div>
+              <form action="#" class="filter__directions-form filter__form">
+                <label>
+                  <input class="filter__directions-item filter__item" type="radio" name="direction" value="training">
+                  <span class="filter__directions-style filter__style"></span>
+                  <span class="filter__line">Силовой тренинг</span>
+                </label>
+                <label>
+                  <input class="filter__directions-item filter__item" type="radio" name="direction" value="cardio">
+                  <span class="filter__directions-style filter__style"></span>
+                  <span class="filter__line">Кардио-тренинг</span>
+                </label>
+                <label>
+                  <input class="filter__directions-item filter__item" type="radio" name="direction" value="functial">
+                  <span class="filter__directions-style filter__style"></span>
+                  <span class="filter__line">Функциональный тренинг</span>
+                </label>
+                <label>
+                  <input class="filter__directions-item filter__item" type="radio" name="direction" value="group">
+                  <span class="filter__directions-style filter__style"></span>
+                  <span class="filter__line">Групповые тренинги</span>
+                </label>
+              </form>
+            </div>
+            <div class="filter__special filter__block">
+              <div class="filter__special-name filter__name">СПЕЦИАЛИЗАЦИЯ</div>
+              <form action="#" class="filter__special-form filter__form">
+                <label>
+                  <input class="filter__special-item filter__item" type="radio" name="special" value="body">
+                  <span class="filter__special-style filter__style"></span>
+                  <span class="filter__line">Тренер по бодибилдингу</span>
+                </label>
+                <label>
+                  <input class="filter__special-item filter__item" type="radio" name="special" value="crossfit">
+                  <span class="filter__special-style filter__style"></span>
+                  <span class="filter__line">Тренер по кроссфиту</span>
+                </label>
+                <label>
+                  <input class="filter__special-item filter__item" type="radio" name="special" value="yoga">
+                  <span class="filter__special-style filter__style"></span>
+                  <span class="filter__line">Тренер по йоге и пилатесу</span>
+                </label>
+              </form>
+            </div>
+            <div class="filter__search filter__block">
+              <input class="filter__search-name filter__name" value="" placeholder="ПОИСК ПО ИМЕНИ">
+            </div>
+          </div>
+          <div class="main__team-info">
+            <div class="main__team-member team__member open" id="1">
+              <div class="team-member__photo member__photo1">
+                <span></span>
+              </div>
+              <div class="team-member__name">Максим Алексеев</div>
+              <div class="team-member__special">Персональный тренер тренажерного зала</div>
+            </div>
+            <div class="main__team-member team__member open" id="2">
+              <div class="team-member__photo member__photo2">
+                <!--                <img src="./img/trener2.png" alt="">-->
+                <span></span>
+              </div>
+              <div class="team-member__name">Алина Иванова</div>
+              <div class="team-member__special">Персональный тренер по кардио</div>
+            </div>
+            <div class="main__team-member team__member open" id="3">
+              <div class="team-member__photo member__photo3">
+                <!--                <img src="./img/trener3.png" alt="">-->
+                <span></span>
+              </div>
+              <div class="team-member__name">Кирилл Богатырёв</div>
+              <div class="team-member__special">Групповой тренер по кросс-фиту</div>
+            </div>
+            <div class="main__team-member team__member open" id="4">
+              <div class="team-member__photo member__photo4">
+                <!--                <img src="./img/trener3.png" alt="">-->
+                <span></span>
+              </div>
+              <div class="team-member__name">Дмитрий Крылов</div>
+              <div class="team-member__special">Тренер по функциональному тренингу</div>
+            </div>
+            <div class="main__team-member team__member open" id="5">
+              <div class="team-member__photo member__photo5">
+                <!--                <img src="./img/trener3.png" alt="">-->
+                <span></span>
+              </div>
+              <div class="team-member__name">Артём Сельчук</div>
+              <div class="team-member__special">Тренер по функциональному тренингу</div>
+            </div>
+            <div class="main__team-member team__member open" id="6">
+              <div class="team-member__photo member__photo6">
+                <!--                <img src="./img/trener3.png" alt="">-->
+                <span></span>
+              </div>
+              <div class="team-member__name">Анна Кульчицкая</div>
+              <div class="team-member__special">Тренер по кардио тренингу</div>
+            </div>
+            <div class="main__team-member team__member open" id="7">
+              <div class="team-member__photo member__photo7">
+                <!--                <img src="./img/trener3.png" alt="">-->
+                <span></span>
+              </div>
+              <div class="team-member__name">Николай Безрукавов</div>
+              <div class="team-member__special">Тренер по кардио тренингу и йоге</div>
+            </div>
+            <div class="main__team-member team__member open" id="8">
+              <div class="team-member__photo member__photo8">
+                <!--                <img src="./img/trener3.png" alt="">-->
+                <span></span>
+              </div>
+              <div class="team-member__name">Александр Безрукавов</div>
+              <div class="team-member__special">Тренер по кардио тренингу и йоге</div>
+            </div>
+            <div class="main__team-member team__member open" id="9">
+              <div class="team-member__photo member__photo9">
+                <!--                <img src="./img/trener3.png" alt="">-->
+                <span></span>
+              </div>
+              <div class="team-member__name">Анастасия Котина</div>
+              <div class="team-member__special">Тренер по силовому тренингу и йоге</div>
+            </div>
+            <div class="main__team-member team__member open" id="10">
+              <div class="team-member__photo member__photo10">
+                <!--                <img src="./img/trener3.png" alt="">-->
+                <span></span>
+              </div>
+              <div class="team-member__name">Олег Лукошков</div>
+              <div class="team-member__special">Тренер по групповому тренингу и бодибилдингу</div>
+            </div>
+            <div class="main__team-member team__member open" id="11">
+              <div class="team-member__photo member__photo11">
+                <!--                <img src="./img/trener3.png" alt="">-->
+                <span></span>
+              </div>
+              <div class="team-member__name">Максим Гречишкин</div>
+              <div class="team-member__special">Тренер по функциональному тренингу и кросс-фиту</div>
+            </div>
+            <div class="main__team-noresult">Нет результатов</div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__container __container">
+        <div class="footer__logo">
+          <span class="footer__logo-text">F</span><span class="footer__logo-text">Z</span>
+        </div>
+        <div class="footer__rules">
+          <div class="footer__rules-title footer__title">Правила клуба</div>
+          <div class="footer__rules-text">С правилами клуба Вы можете
+            ознакомиться <a href="#">здесь</a></div>
+        </div>
+        <div class="footer__contacts">
+          <div class="footer__contacts-title footer__title">Контакты</div>
+          <div class="footer__contacts-address"><span class="footer__contacts-address-title">Адрес: </span>
+            г. Казань, ул. Баумана, д. 38
+          </div>
+          <div class="footer__contacts-info">
+            <div class="footer__contacts-number">
+              <div class="footer__contacts-number-icon">
+                <i class="uil uil-phone"></i>
+              </div>
+              <div class="footer__contacts-number-text">
+                +7 (990) 333 44 66
+              </div>
+            </div>
+            <div class="footer__contacts-email">
+              <div class="footer__contacts-email-icon">
+                <i class="uil uil-at"></i>
+              </div>
+              <div class="footer__contacts-email-text">
+                fitzone@mail.ru
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__social">
+          <div class="footer__social-title footer__title">Соц. сети</div>
+          <div class="footer__social-info">
+            <a href="https://t.me/itrostik" class="footer__social-whatsapp">
+              <div class="footer__social-whatsapp-icon">
+                <i class="uil uil-whatsapp"></i>
+              </div>
+              <div class="footer__social-whatsapp-text">
+                WhatsApp
+              </div>
+            </a>
+            <a href="https://t.me/itrostik" class="footer__social-tg">
+              <div class="footer__social-tg-icon">
+                <i class="uil uil-telegram"></i>
+              </div>
+              <div class="footer__social-tg-text">
+                Telegram
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+  </div>
+  <script src="./js/index.bundle.js"></script>
+  <script src="./js/team.bundle.js"></script>
+  <script src="./js/modal.bundle.js"></script>
+  <script src="./js/trener.bundle.js"></script>
+</body>
+</html>

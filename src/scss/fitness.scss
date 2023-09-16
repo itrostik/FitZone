@@ -1,0 +1,82 @@
+@import "reset";
+@import "vars";
+@import "startstyle";
+@import "header";
+@import "footer";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap');
+
+.main{
+  flex: 1 1 100%;
+  &__fitness{
+    &-title{
+      margin: 0 0 70px 0;
+    }
+    &-info{
+      display: flex;
+      flex-direction: column;
+      gap: 100px;
+    }
+  }
+  .fitness-zone{
+    display: flex;
+    gap: 50px;
+    &__title{
+      color: #FFF;
+      font-size: 40px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    &__info{
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      flex: 1 1 100%;
+    }
+    &__advantages{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    &__advantage{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      p{
+        color: rgba(255, 255, 255, 0.80);
+        font-size: 20px;
+        font-weight: 400;
+      }
+      span{
+        color: #FFF;
+        font-size: 20px;
+        font-weight: 700;
+      }
+    }
+    &__text{
+      color: rgba(255, 255, 255, 0.80);
+      font-size: 20px;
+      font-weight: 400;
+    }
+    &__image{
+      width: 100%;
+      height: 500px;
+    }
+    .image1{
+      background: url("../img/cardio.jpg") center/cover no-repeat;
+    }
+    .image2{
+      background: url("../img/fitness.jpg") center/cover no-repeat;
+    }
+    .image3{
+      background: url("../img/stretching.jpg") center/cover no-repeat;
+    }
+    .image4{
+      background: url("../img/personal.jpg") center/cover no-repeat;
+    }
+    .image5{
+      background: url("../img/functial.jpg") center/cover no-repeat;
+    }
+  }
+}
+
+@import "media";

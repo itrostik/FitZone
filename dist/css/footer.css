@@ -1,0 +1,107 @@
+.footer__title {
+  color: #FFF;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.footer {
+  padding: 100px 0;
+}
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.footer__logo {
+  font-size: 75px;
+  font-weight: 900;
+  cursor: pointer;
+}
+.footer__logo span:first-child {
+  transition: 0.5s;
+  color: #ffffff;
+}
+.footer__logo span:last-child {
+  transition: 0.5s;
+  color: #ff0000;
+}
+.footer__logo:hover span:first-child {
+  color: #ff0000;
+}
+.footer__logo:hover span:last-child {
+  color: #ffffff;
+}
+.footer__rules, .footer__social, .footer__contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.footer__rules-text {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 20px;
+  font-weight: 500;
+  max-width: 400px;
+}
+.footer__rules-text a {
+  font-weight: 600;
+  text-decoration: underline;
+  transition: 0.5s;
+}
+.footer__rules-text a:hover {
+  color: #ffffff;
+}
+.footer__contacts-address {
+  font-size: 22px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.8);
+}
+.footer__contacts-address-title {
+  color: #FFF;
+  font-size: 22px;
+  font-weight: 600;
+}
+.footer__contacts-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #FFF;
+  font-size: 22px;
+  font-weight: 600;
+}
+.footer__contacts-number, .footer__contacts-email {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.footer__contacts-number i, .footer__contacts-email i {
+  font-size: 30px;
+  color: #ff0000;
+}
+.footer__social-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #FFF;
+  font-size: 22px;
+  font-weight: 600;
+}
+.footer__social-tg, .footer__social-whatsapp {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+}
+.footer__social-tg-text, .footer__social-whatsapp-text {
+  transition: 0.5s;
+}
+.footer__social-tg i, .footer__social-whatsapp i {
+  transition: 0.5s;
+  font-size: 30px;
+  color: #ff0000;
+}
+.footer__social-tg:hover i, .footer__social-whatsapp:hover i {
+  color: #ffffff;
+}
+.footer__social-tg:hover .footer__social-tg-text, .footer__social-tg:hover .footer__social-whatsapp-text, .footer__social-whatsapp:hover .footer__social-tg-text, .footer__social-whatsapp:hover .footer__social-whatsapp-text {
+  color: #ff0000;
+}

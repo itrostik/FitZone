@@ -1,0 +1,119 @@
+@import "vars";
+
+.footer__title{
+  color: #FFF;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.footer{
+  padding: 100px 0;
+  &__container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  &__logo{
+    font-size: 75px;
+    font-weight: 900;
+    cursor: pointer;
+    span:first-child{
+      transition: 0.5s;
+      color: $colorMain;
+    }
+    span:last-child{
+      transition: 0.5s;
+      color: $accent1;
+    }
+    &:hover{
+      span:first-child{
+        color: $accent1;
+      }
+      span:last-child{
+        color: $colorMain;
+      }
+    }
+  }
+  &__rules, &__social, &__contacts{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  &__rules{
+    &-text{
+      color: rgba(255, 255, 255, 0.80);
+      font-size: 20px;
+      font-weight: 500;
+      max-width: 400px;
+      a{
+        font-weight: 600;
+        text-decoration: underline;
+        transition: 0.5s;
+        &:hover{
+          color: $colorMain;
+        }
+      }
+    }
+  }
+  &__contacts{
+    &-address{
+      font-size: 22px;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.80);
+      &-title{
+        color: #FFF;
+        font-size: 22px;
+        font-weight: 600;
+      }
+    }
+    &-info{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      color: #FFF;
+      font-size: 22px;
+      font-weight: 600;
+    }
+    &-number, &-email{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      i{
+        font-size: 30px;
+        color: $accent1;
+      }
+    }
+  }
+  &__social{
+    &-info{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      color: #FFF;
+      font-size: 22px;
+      font-weight: 600;
+    }
+    &-tg, &-whatsapp{
+      align-items: center;
+      display: flex;
+      gap: 10px;
+      &-text{
+        transition: 0.5s;
+      }
+      i{
+        transition: 0.5s;
+        font-size: 30px;
+        color: $accent1;
+      }
+      &:hover{
+        i{
+          color: $colorMain;
+        }
+        .footer__social-tg-text, .footer__social-whatsapp-text{
+          color: $accent1;
+        }
+      }
+    }
+  }
+}

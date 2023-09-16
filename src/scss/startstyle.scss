@@ -1,0 +1,59 @@
+@import "vars";
+
+*{
+  font-family: $fontMain;
+  color: $colorMain;
+}
+
+body{
+  background: #000;
+  position: relative;
+}
+
+
+.wrapper{
+  position: relative;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 100%;
+  min-height: 100%;
+}
+
+.closing{
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+  padding: 0 12px 0 0;
+}
+
+.__container{
+  margin: 0 auto;
+  max-width: 1400px;
+  padding: 0 20px;
+}
+
+.title{
+  color: #FFF;
+  font-size: 65px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;               /* ширина всей полосы прокрутки */
+}
+
+body::-webkit-scrollbar-track {
+  background: #000000;        /* цвет зоны отслеживания */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: $accent1;    /* цвет бегунка */
+  border-radius: 20px;       /* округлось бегунка */
+  border: 3px solid $accent1;  /* отступ вокруг бегунка */
+}

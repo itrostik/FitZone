@@ -1,0 +1,1 @@
+(()=>{const e=document.querySelectorAll(".main__tariffs-item"),s=document.querySelectorAll(".main__tariffs-advantages");e.forEach((t=>{t.addEventListener("click",(()=>{e.forEach((e=>{e===t?t.classList.add("item__active"):e.classList.remove("item__active")}));const a=t.classList[1];s.forEach((e=>{e.id===a?e.classList.add("openBlock"):e.classList.remove("openBlock")}))}))}))})();
